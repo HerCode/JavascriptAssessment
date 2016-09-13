@@ -1,61 +1,69 @@
-html, body, ul, ol, li, form, fieldset, legend
-{
-	margin: 0;
-	padding: 0;
+html, body, ul, ol, li, form, fieldset, legend {
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
-
-fieldset,img { border: 0; }
-
-legend { color: #000; }
-
-li { list-style: none; }
-
-sup { vertical-align: text-top; }
-
-sub { vertical-align: text-bottom; }
-
-table
-{
-	border-collapse: collapse;
-	border-spacing: 0;
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
 }
 
-caption, th, td
-{
-	text-align: left;
-	vertical-align: top;
-	font-weight: normal;
+fieldset, img {
+    border: 0;
 }
 
-input, textarea, select
-{
-	font-size: 110%;
-	line-height: 1.1;
+legend {
+    color: #000;
 }
 
-abbr, acronym
-{
-	border-bottom: .1em dotted;
-	cursor: help;
+li {
+    list-style: none;
 }
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+input, textarea, select {
+    font-size: 110%;
+    line-height: 1.1;
+}
+
+abbr, acronym {
+    border-bottom: .1em dotted;
+    cursor: help;
+}
+
 html {
-  background-color: #dcfff5;
+    background-color: #009ACD;
 }
 
 h1 {
-  font-family:'Roboto Slab', serif;
-  font-size:2em;
-  font-weight: 700;
-  color:#531380;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 50px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: #4C9C23;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
 }
 
 p#objective {
-  font-style: oblique;
-  color: #ff0000;
-  margin-left: 75px;
+    font-style: oblique;
+    color: #ffffff;
+    margin-left: 75px;
 }

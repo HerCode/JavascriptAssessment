@@ -1,56 +1,55 @@
 var theNumber = 1;
 
-var michelangelo = function(value){
+var michelangelo = function(value) {
     value = (value * 2);
-    return value;
-};
+    //  value = 2 (2 * 1)
 
-var donatello = function(value, anotherValue){
+    return value; // 2
+};
+var value = 4;
+var anotherValue = 2;
+var donatello = function(value, anotherValue) {
+    //  function (4, 2)
     value = anotherValue + value;
+    // value = 6 (2 + 4)
     anotherValue = value * anotherValue;
-    return anotherValue;
-    console.log(anotherValue);
+    //  anotherValue = 6 * 2 = 12
+    return anotherValue; // 12
 };
 
-var leonardo = function(value){
+var leonardo = function(value) {
+    // function(1)
     var anotherValue = value;
+    //  anotherValue is a Local Variable(theNumber) = 1
     value *= 4;
+    // value = 4 (1 * 4)
     theNumber = value / 2;
-    return (value + anotherValue);
+    // Changing Global Variable (theNumber) = 2 (4/2)
+    return (value + anotherValue); // return 4 + 1 = 5
 };
 
-var raphael = function(value, anotherValue, yetAnotherValue){
+var raphael = function(value, anotherValue, yetAnotherValue) {
+    // function(3, 2, 4)
     value = value * anotherValue + yetAnotherValue;
-    return yetAnotherValue;
+    // value = 3 * 2 + 4 = 10
+    return yetAnotherValue; // 4
 };
 
 //In your email, tell me what the answer to this expression would be:
-var theNumber = 1;
+
 // Here the value of the named variable is declared to be 1.
-michelangelo(theNumber) + leonardo(theNumber);
-// Here you subsitute the variable value of theNumber in to the equation and solve:
-theNumber = 1 + 1;
-console.log(theNumber);
+alert(michelangelo(theNumber) + leonardo(theNumber));
+// michelangelo = 2
+// leonardo = 5
+// 2 + 5 = 7
+
 
 theNumber = theNumber * 2;
-theNumber = 2 * 2;
-// Here we carry the answer to the previous equation forward and substitute that value into this equation, then solve: 2 * 2 = 4
-console.log(theNumber);
-// Here we log the new value of the variable "theNumber" to the console, to verify the code is working and is showing the accurate
-//answer to the expression.
+// theNumber = 4 (2 * 2)
+
 
 //In your email, tell me what the answer to this expression would be:
-var theNumber = 1;
-// Here the value of the named variable is declared to be 1.
-(donatello(theNumber, 2)) - (raphael(3, 2, theNumber));
-theNumber = ((1 * 2) - (3 * 2) + 1);
-theNumber = 2 - (6 + 1);
-theNumber = 7 -2;
-// Here you subsitute the variable value of theNumber in to the equation and solve:
-// ((1 * 2) - (3 * 2) + 1)
-// 2 - (6 + 1)
-// 2 - 7
-// 5
-console.log(theNumber);
-// Here we log the new value of the variable "theNumber" to the console, to verify the code is working and is showing the accurate
-//answer to the expression.
+alert((donatello(theNumber, 2)) - (raphael(3, 2, theNumber)));
+// donatello = 4
+// raphael = 12
+// 12 - 4 = 8
